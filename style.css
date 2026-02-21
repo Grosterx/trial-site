@@ -1880,3 +1880,840 @@ a {
         gap: 40px;
     }
 }
+.us-wrap-but{
+    width: 100%;
+    max-width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border:1px solid rgba(115, 76, 245, 1);
+    border-radius: 25px;
+    padding: 16px;
+    transition: background-color 0.2s ease;
+    margin-top:25px;
+}
+.us-wrap-but:hover {
+    background-color: rgba(95, 56, 225, 1);
+}
+.text-purple{
+    color:rgba(115, 76, 245, 1) !important;
+}
+.us-main{
+    background-position: center;
+    max-width: 1060px;
+    margin: 40px auto 0;
+    padding: 60px 40px;
+    border-radius: 35px;
+}
+.us-text{
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 434px;
+    height: 48px;
+    color:rgba(19, 65, 120, 1);
+}
+.small-txt{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color:rgba(117, 133, 157, 1);
+}
+/* ===== СЕКЦИЯ УСЛУГ (US-GRID) ===== */
+.us-grid {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.wrap-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+/* Карточка услуги */
+.custom-us-card {
+    background: #f8f9ff;
+    border-radius: 24px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-us-card:hover {
+    background: white;
+    box-shadow: 0 20px 40px rgba(115, 76, 245, 0.08);
+    transform: translateY(-5px);
+}
+
+/* Специальные карточки */
+.ryt {
+    background-color: rgba(115, 76, 245, 1);
+    box-shadow: 0 10px 30px rgba(115, 76, 245, 0.3);
+}
+
+.ryt .card-title,
+.ryt .card-description,
+.ryt .title-line,
+.ryt .wrap1 p {
+    color: white !important;
+}
+
+.ryt .title-line::before,
+.ryt .title-line::after {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.ryt2 {
+    background-color: rgba(19, 65, 120, 1);
+    box-shadow: 0 10px 30px rgba(11, 40, 75, 0.4);
+}
+
+.ryt2 .card-title,
+.ryt2 .card-description,
+.ryt2 .title-line,
+.ryt2 .wrap1 p {
+    color: white !important;
+}
+
+.ryt2 .title-line::before,
+.ryt2 .title-line::after {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Контент карточки */
+.custom-us-card .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок карточки */
+.custom-us-card .card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(19, 65, 120, 1);
+    margin-bottom: 16px;
+}
+
+/* Цена */
+.custom-us-card .wrt {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.custom-us-card .wrt .h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: inherit;
+    margin: 0;
+}
+
+.custom-us-card .wrt .gg2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(117, 133, 157, 1);
+    position: relative;
+    bottom: -2px;
+}
+
+.ryt .wrt .gg2,
+.ryt2 .wrt .gg2 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Описание */
+.custom-us-card .card-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(117, 133, 157, 1);
+    margin: 0 0 24px 0;
+}
+
+/* Заголовок с линиями */
+.title-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(19, 65, 120, 1);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+.title-line::before,
+.title-line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid rgba(19, 65, 120, 0.3);
+}
+
+.title-line::before {
+    margin-right: 15px;
+}
+
+.title-line::after {
+    margin-left: 15px;
+}
+
+/* Элементы списка */
+.custom-us-card .wrap1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.custom-us-card .wrap1 img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.rrr, .rrr2 {
+    position: static;
+    margin-right: 0;
+}
+
+.custom-us-card .wrap1 .card-description {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    flex: 1;
+}
+
+/* Кнопка в карточке */
+.custom-us-card .us-wrap-but {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(115, 76, 245, 1);
+    border-radius: 25px;
+    padding: 16px;
+    transition: all 0.2s ease;
+    margin-top: 24px;
+    background-color: transparent;
+}
+
+.custom-us-card .us-wrap-but:hover {
+    background-color: rgba(95, 56, 225, 1);
+    border-color: rgba(95, 56, 225, 1);
+}
+
+.custom-us-card .us-wrap-but:hover a {
+    color: white !important;
+}
+
+.custom-us-card .us-wrap-but a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(115, 76, 245, 1);
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.custom-us-card .us-wrap-but img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(1167%) hue-rotate(225deg) brightness(96%) contrast(97%);
+    transition: filter 0.2s ease;
+}
+
+.custom-us-card .us-wrap-but:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* Специальные кнопки для цветных карточек */
+.ryt .us-wrap-but,
+.ryt2 .us-wrap-but {
+    border-color: white;
+}
+
+.ryt .us-wrap-but a,
+.ryt2 .us-wrap-but a {
+    color: white;
+}
+
+.ryt .us-wrap-but img,
+.ryt2 .us-wrap-but img {
+    filter: brightness(0) invert(1);
+}
+
+.ryt .us-wrap-but:hover,
+.ryt2 .us-wrap-but:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.ryt .us-wrap-but:hover a,
+.ryt2 .us-wrap-but:hover a {
+    color: rgba(115, 76, 245, 1) !important;
+}
+
+.ryt .us-wrap-but:hover img,
+.ryt2 .us-wrap-but:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(1167%) hue-rotate(225deg) brightness(96%) contrast(97%);
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ ===== */
+@media (max-width: 991px) and (min-width: 768px) {
+    .us-grid {
+        padding: 50px 24px;
+    }
+    
+    .wrap-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .custom-us-card {
+        padding: 28px 20px;
+    }
+    
+    .custom-us-card .card-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .custom-us-card .wrt .h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .custom-us-card .card-description {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .title-line {
+        font-size: 17px;
+    }
+    
+    .custom-us-card .wrap1 .card-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ===== */
+@media (max-width: 767px) {
+    .us-grid {
+        padding: 40px 16px;
+    }
+    
+    .wrap-us-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .custom-us-card {
+        padding: 28px 24px;
+        width: 100%;
+    }
+    
+    .custom-us-card .card-title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+    }
+    
+    .custom-us-card .wrt .h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .custom-us-card .wrt .gg2 {
+        font-size: 13px;
+    }
+    
+    .custom-us-card .card-description {
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+    }
+    
+    .title-line {
+        font-size: 17px;
+    }
+    
+    .title-line::before,
+    .title-line::after {
+        flex: 0 1 50px;
+    }
+    
+    .custom-us-card .wrap1 {
+        padding: 6px 0;
+    }
+    
+    .custom-us-card .wrap1 .card-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .custom-us-card .us-wrap-but {
+        height: 2.8rem;
+        margin-top: 20px;
+    }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ ===== */
+@media (max-width: 480px) {
+    .us-grid {
+        padding: 30px 12px;
+    }
+    
+    .wrap-us-grid {
+        gap: 20px;
+    }
+    
+    .custom-us-card {
+        padding: 24px 16px;
+    }
+    
+    .custom-us-card .card-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .custom-us-card .wrt .h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .custom-us-card .wrt .gg2 {
+        font-size: 12px;
+        bottom: -1px;
+    }
+    
+    .custom-us-card .card-description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .title-line {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .title-line::before,
+    .title-line::after {
+        flex: 0 1 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .custom-us-card .wrap1 {
+        padding: 5px 0;
+        gap: 8px;
+    }
+    
+    .custom-us-card .wrap1 img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .custom-us-card .wrap1 .card-description {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    .custom-us-card .us-wrap-but {
+        height: 2.6rem;
+        padding: 12px;
+        margin-top: 16px;
+    }
+    
+    .custom-us-card .us-wrap-but a {
+        font-size: 13px;
+    }
+}
+/* ===== СТАТИЧНЫЕ КАРТОЧКИ БЕЗ HOVER (для конкретной страницы) ===== */
+.custom-us-card-static {
+    background: #f8f9ff;
+    border-radius: 24px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Специальные карточки */
+.custom-us-card-static.ryt {
+    background-color: rgba(115, 76, 245, 1);
+    box-shadow: 0 10px 30px rgba(115, 76, 245, 0.3);
+}
+
+.custom-us-card-static.ryt .card-title,
+.custom-us-card-static.ryt .card-description,
+.custom-us-card-static.ryt .title-line,
+.custom-us-card-static.ryt .wrap1 p {
+    color: white !important;
+}
+
+.custom-us-card-static.ryt .title-line::before,
+.custom-us-card-static.ryt .title-line::after {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-us-card-static.ryt2 {
+    background-color: rgba(19, 65, 120, 1);
+    box-shadow: 0 10px 30px rgba(11, 40, 75, 0.4);
+}
+
+.custom-us-card-static.ryt2 .card-title,
+.custom-us-card-static.ryt2 .card-description,
+.custom-us-card-static.ryt2 .title-line,
+.custom-us-card-static.ryt2 .wrap1 p {
+    color: white !important;
+}
+
+.custom-us-card-static.ryt2 .title-line::before,
+.custom-us-card-static.ryt2 .title-line::after {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Контент карточки */
+.custom-us-card-static .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок карточки */
+.custom-us-card-static .card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(19, 65, 120, 1);
+    margin-bottom: 16px;
+}
+
+/* Цена */
+.custom-us-card-static .wrt {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.custom-us-card-static .wrt .h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: inherit;
+    margin: 0;
+}
+
+.custom-us-card-static .wrt .gg2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(117, 133, 157, 1);
+    position: relative;
+    bottom: -2px;
+}
+
+.custom-us-card-static.ryt .wrt .gg2,
+.custom-us-card-static.ryt2 .wrt .gg2 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Описание */
+.custom-us-card-static .card-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(117, 133, 157, 1);
+    margin: 0 0 24px 0;
+}
+
+/* Заголовок с линиями */
+.custom-us-card-static .title-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(19, 65, 120, 1);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+.custom-us-card-static .title-line::before,
+.custom-us-card-static .title-line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid rgba(19, 65, 120, 0.3);
+}
+
+.custom-us-card-static .title-line::before {
+    margin-right: 15px;
+}
+
+.custom-us-card-static .title-line::after {
+    margin-left: 15px;
+}
+
+/* Элементы списка */
+.custom-us-card-static .wrap1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.custom-us-card-static .wrap1 img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.custom-us-card-static .wrap1 .card-description {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    flex: 1;
+}
+
+/* Кнопка в карточке (если нужна) */
+.custom-us-card-static .us-wrap-but {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(115, 76, 245, 1);
+    border-radius: 25px;
+    padding: 16px;
+    transition: all 0.2s ease;
+    margin-top: 24px;
+    background-color: transparent;
+}
+
+.custom-us-card-static .us-wrap-but a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(115, 76, 245, 1);
+    margin: 0;
+    text-decoration: none;
+}
+
+.custom-us-card-static .us-wrap-but img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(1167%) hue-rotate(225deg) brightness(96%) contrast(97%);
+}
+
+/* Специальные кнопки для цветных карточек */
+.custom-us-card-static.ryt .us-wrap-but,
+.custom-us-card-static.ryt2 .us-wrap-but {
+    border-color: white;
+}
+
+.custom-us-card-static.ryt .us-wrap-but a,
+.custom-us-card-static.ryt2 .us-wrap-but a {
+    color: white;
+}
+
+.custom-us-card-static.ryt .us-wrap-but img,
+.custom-us-card-static.ryt2 .us-wrap-but img {
+    filter: brightness(0) invert(1);
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ ===== */
+@media (max-width: 991px) and (min-width: 768px) {
+    .custom-us-card-static {
+        padding: 28px 20px;
+    }
+    
+    .custom-us-card-static .card-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .custom-us-card-static .wrt .h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .custom-us-card-static .card-description {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .custom-us-card-static .title-line {
+        font-size: 17px;
+    }
+    
+    .custom-us-card-static .wrap1 .card-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ===== */
+@media (max-width: 767px) {
+    .custom-us-card-static {
+        padding: 28px 24px;
+        width: 100%;
+    }
+    
+    .custom-us-card-static .card-title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+    }
+    
+    .custom-us-card-static .wrt .h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .custom-us-card-static .wrt .gg2 {
+        font-size: 13px;
+    }
+    
+    .custom-us-card-static .card-description {
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+    }
+    
+    .custom-us-card-static .title-line {
+        font-size: 17px;
+    }
+    
+    .custom-us-card-static .title-line::before,
+    .custom-us-card-static .title-line::after {
+        flex: 0 1 50px;
+    }
+    
+    .custom-us-card-static .wrap1 {
+        padding: 6px 0;
+    }
+    
+    .custom-us-card-static .wrap1 .card-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .custom-us-card-static .us-wrap-but {
+        height: 2.8rem;
+        margin-top: 20px;
+    }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ ===== */
+@media (max-width: 480px) {
+    .custom-us-card-static {
+        padding: 24px 16px;
+    }
+    
+    .custom-us-card-static .card-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .custom-us-card-static .wrt .h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .custom-us-card-static .wrt .gg2 {
+        font-size: 12px;
+        bottom: -1px;
+    }
+    
+    .custom-us-card-static .card-description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .custom-us-card-static .title-line {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .custom-us-card-static .title-line::before,
+    .custom-us-card-static .title-line::after {
+        flex: 0 1 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .custom-us-card-static .wrap1 {
+        padding: 5px 0;
+        gap: 8px;
+    }
+    
+    .custom-us-card-static .wrap1 img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .custom-us-card-static .wrap1 .card-description {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    .custom-us-card-static .us-wrap-but {
+        height: 2.6rem;
+        padding: 12px;
+        margin-top: 16px;
+    }
+    
+    .custom-us-card-static .us-wrap-but a {
+        font-size: 13px;
+    }
+}
